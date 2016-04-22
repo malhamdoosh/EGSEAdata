@@ -6,7 +6,7 @@
 #' @aliases EGSEAdata
 #' @docType package 
 #' @title Gene Set Collections for the EGSEA package
-#' @author Monther Alhamdoosh, Milica Ng and Matthew Ritchie 
+#' @author Monther Alhamdoosh, Yifang Hu and Gordon K. Smyth 
 #' @description This package provides R data objects for the  gene set collections that 
 #' are used by the EGSEA package.
 NULL
@@ -20,7 +20,7 @@ NULL
 #' @docType data
 #' @format A List object with two components: voom and contra. 
 #' @source The count matrix of this experiment is vailable from the GEO database
-#' \url{www.ncbi.nlm.nih.gov/geo/} as series 
+#' \url{www.ncbi.nlm.nih.gov/geo/} as series GSE79027.
 NULL
 
 #' Human IL-13 dataset - Raw Counts
@@ -32,7 +32,7 @@ NULL
 #' @docType data
 #' @format A List object with five components: counts, group, design, contra and genes. 
 #' @source The FASTQ files of this experiment are vailable from the GEO database
-#' \url{www.ncbi.nlm.nih.gov/geo/} as series 
+#' \url{www.ncbi.nlm.nih.gov/geo/} as series GSE79027.
 NULL
 
 #' Mouse mammary cell dataset

@@ -1,16 +1,17 @@
 Package: EGSEAdata
 Title: Gene set collections for the EGSEA package
-Version: 0.99.0
+Version: 0.99.1
 Date: 15-02-2016
-Author: Monther Alhamdoosh, Milica Ng and Matthew Richtie
+Author:  Monther Alhamdoosh, Yifang Hu and Gordon K. Smyth 
 Maintainer: Monther Alhamdoosh <m.hamdoosh@gmail.com>
-Description: This package includes gene set collections that are used
-        for the Ensemble of Gene Set Enrichment Analyses (EGSEA) method
-        for gene set testing.
+Description: This package includes gene set collections that are used for the
+    Ensemble of Gene Set Enrichment Analyses (EGSEA) method for gene set testing.
 biocViews: ExperimentData
-Depends: R (>= 3.2.0)
+Depends:
+    R (>= 3.3)
 License: GPL-2
 LazyLoad: yes
 NeedsCompilation: no
-Suggests: EGSEA
+Suggests:
+    EGSEA
 RoxygenNote: 5.0.1

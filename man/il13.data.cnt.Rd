@@ -7,7 +7,7 @@
 \format{A List object with five components: counts, group, design, contra and genes.}
 \source{
 The FASTQ files of this experiment are vailable from the GEO database
-\url{www.ncbi.nlm.nih.gov/geo/} as series
+\url{www.ncbi.nlm.nih.gov/geo/} as series GSE79027.
 }
 \description{
 It contains the raw count matrix of RNA-seq performed on samples of human normal

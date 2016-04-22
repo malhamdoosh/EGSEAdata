@@ -7,7 +7,7 @@
 \format{A List object with two components: voom and contra.}
 \source{
 The count matrix of this experiment is vailable from the GEO database
-\url{www.ncbi.nlm.nih.gov/geo/} as series
+\url{www.ncbi.nlm.nih.gov/geo/} as series GSE79027.
 }
 \description{
 The voom object calculated from the TMM normalized count matrix of RNA-seq 

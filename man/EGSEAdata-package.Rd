@@ -10,6 +10,6 @@ This package provides R data objects for the  gene set collections that
 are used by the EGSEA package.
 }
 \author{
-Monther Alhamdoosh, Milica Ng and Matthew Ritchie
+Monther Alhamdoosh, Yifang Hu and Gordon K. Smyth
 }
 
