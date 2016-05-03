@@ -1,6 +1,6 @@
 Package: EGSEAdata
 Title: Gene set collections for the EGSEA package
-Version: 0.99.1
+Version: 1.0.0
 Date: 15-02-2016
 Author:  Monther Alhamdoosh, Yifang Hu and Gordon K. Smyth 
 Maintainer: Monther Alhamdoosh <m.hamdoosh@gmail.com>
