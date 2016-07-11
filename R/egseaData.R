@@ -11,6 +11,16 @@
 #' are used by the EGSEA package.
 NULL
 
+#' EGSEA analysis results on the human IL-13 dataset  
+#' 
+#' EGSEA analysis was performed on the il13.data from the EGSEAdata package using
+#' the KEGG pathways, c2 and c5 gene set collections.    
+#' @name gsa
+#' @docType data
+#' @format An object of class EGSEAResults 
+#' @source The dataset of this analysis is available in the EGSEAdata package.
+NULL
+
 #' Human IL-13 dataset  
 #' 
 #' The voom object calculated from the TMM normalized count matrix of RNA-seq 
