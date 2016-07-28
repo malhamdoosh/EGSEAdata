@@ -15,7 +15,7 @@ NULL
 #' 
 #' EGSEA analysis was performed on the il13.data from the EGSEAdata package using
 #' the KEGG pathways, c2 and c5 gene set collections.    
-#' @name gsa
+#' @name il13.gsa
 #' @docType data
 #' @format An object of class EGSEAResults 
 #' @source The dataset of this analysis is available in the EGSEAdata package.
@@ -61,7 +61,7 @@ NULL
 #' @title GeneSetDB Human Collections
 #' 
 #' @description  Human gene set collections from the GeneSetDB
-#' @name gsetdb.all
+#' @name gsetdb.human
 #' @docType data
 #' @format list 
 #' @source
@@ -74,7 +74,7 @@ NULL
 #' @title GeneSetDB Mouse Collections
 #' 
 #' @description  Mouse gene set collections from the GeneSetDB
-#' @name genesetdb.mouse
+#' @name gsetdb.mouse
 #' @docType data
 #' @format list 
 #' @source
@@ -87,7 +87,7 @@ NULL
 #' @title GeneSetDB Rat Collections
 #' 
 #' @description  Rat gene set collections from the GeneSetDB
-#' @name genesetdb.rat
+#' @name gsetdb.rat
 #' @docType data
 #' @format list 
 #' @source
@@ -112,8 +112,8 @@ NULL
 
 #' @title MSigDB Gene Set Collections 
 #' 
-#' @description  Human gene set collections from the MSigDB database Version 5
-#' @name gsc.all5
+#' @description  Gene set collections from the MSigDB database Version 5
+#' @name msigdb
 #' @docType data
 #' @format list 
 #' @source
@@ -168,7 +168,7 @@ NULL
 
 #' @title Mouse C5 MSigDB Gene Set Collections
 #' 
-#' @description  Mouse orthologs gene set collections from the MSigDB database Version 5
+#' @description  Mouse orthologs gene set collections from the MSigDB database Version 4
 #' @name Mm.c5
 #' @docType data
 #' @format list 

@@ -88,13 +88,10 @@
 #
 #updateMSigDBAnno <- function(xml.file, out.dir="./"){
 #
-#	msigdb.xml.file="../msigdb_v4.0.xml"
-#	gsc.all4 = xmlToList(xmlParse(msigdb.xml.file))
-#	save(gsc.all4, file="msigdb_v4.rda")
 #
 #	msigdb.xml.file="../msigdb_v5.0.xml"
-#	gsc.all5 = xmlToList(xmlParse(msigdb.xml.file))
-#	save(gsc.all5, file="msigdb_v5.rda")
+#	msigdb = xmlToList(xmlParse(msigdb.xml.file))
+#	save(msigdb, file="msigdb.rda")
 #}
 #
 #updateMsigDBMouseC5 <- function(out.dir="./"){	

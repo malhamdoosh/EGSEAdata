@@ -9,6 +9,6 @@
 http://bioinf.wehi.edu.au/software/MSigDB/
 }
 \description{
-Mouse orthologs gene set collections from the MSigDB database Version 5
+Mouse orthologs gene set collections from the MSigDB database Version 4
 }
 
