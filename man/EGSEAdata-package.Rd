@@ -12,6 +12,11 @@ It includes Human and Mouse versions of the MSidDB (Subramanian, et al. (2005)
 PNAS, 102(43):15545-15550) and GeneSetDB (Araki, et al. (2012) FEBS Open Bio, 2:76-82) 
 collections.
 }
+\details{
+While the gene set collections in MSigDB and GeneSetDB have different names and 
+purposes, some of these collections overlap. For example, both databases contain a Gene Ontology
+collection but MSigDB's collection aimed for a higher level of abstraction for the GO terms.
+}
 \author{
 Monther Alhamdoosh, Yifang Hu and Gordon K. Smyth
 }

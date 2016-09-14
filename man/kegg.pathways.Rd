@@ -8,8 +8,23 @@
 \source{
 Luo, W., Friedman, M., Shedden K., Hankenson, K. and Woolf, P GAGE: Generally Applicable
 Gene Set Enrichment for Pathways Analysis. BMC Bioinformatics 2009, 10:161
+Obtained from \pkg{gage} using the function \code{kegg.gsets()}
 }
 \description{
 Human, Mouse and Rat gene set collections from the KEGG database
+}
+\details{
+The collections were generated using the following R script \cr 
+ library(gage) \cr 
+	kegg.pathways = list() \cr 
+	species.all = c("human", "mouse", "rat") \cr 
+	for (species in species.all){ \cr 
+		kegg = kegg.gsets(species = species, id.type = "kegg") \cr 
+		kegg.pathways[[species]] = kegg \cr 
+	} \cr 
+	save(kegg.pathways, file='kegg.pathways.rda')
+}
+\seealso{
+Invoke egsea.data() to find out the current version and latest download/update date.
 }
 

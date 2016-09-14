@@ -82,13 +82,13 @@
 #		kegg = kegg.gsets(species = species, id.type = "kegg")
 #		kegg.pathways[[species]] = kegg
 #	}
-#	save(kegg.pathways, file=paste0(data.dir, 'kegg.pathways.rda'))
+#	save(kegg.pathways, file='kegg.pathways.rda')
 #	print(paste0("A file has been written to ", data.dir, 'kegg.pathways.rda' ))
 #}
 #
 #updateMSigDBAnno <- function(xml.file, out.dir="./"){
 #
-#
+#	library(XML)
 #	msigdb.xml.file="../msigdb_v5.0.xml"
 #	msigdb = xmlToList(xmlParse(msigdb.xml.file))
 #	save(msigdb, file="msigdb.rda")

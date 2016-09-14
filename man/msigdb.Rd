@@ -9,8 +9,20 @@
 Aravind Subramanian, Pablo Tamayo, Vamsi K. Mootha, Sayan Mukherjee, Benjamin L. Ebert, Michael A. Gillette, Amanda Paulovich, Scott L. Pomeroy, Todd R. Golub, Eric S. Lander, and Jill P. Mesirov
 Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expression profiles
 PNAS 2005 102 (43) 15545-15550
+Downloaded from http://broadinstitute.org/ on 20 August 2015.
 }
 \description{
-Gene set collections from the MSigDB database Version 5
+Gene set collections from the MSigDB database
+}
+\details{
+Procedure \cr 
+1. The current msigdb_vx.xml file was downloaded. \cr 
+2. It was parsed using xmlParse() and then converted to list using xmlToList()
+3. The resulting list was written to an RData file using save(). \cr 
+This dataset is mainly used to extract MSigDB gene set annotation and the human gene set 
+collections.
+}
+\seealso{
+Invoke egsea.data() to find out the current version and latest download/update date.
 }
 

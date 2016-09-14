@@ -6,12 +6,23 @@
 \title{Mouse C3 MSigDB Gene Set Collections}
 \format{list}
 \source{
-http://bioinf.wehi.edu.au/software/MSigDB/. Extracted from 
+Downloaded from http://bioinf.wehi.edu.au/software/MSigDB/. 
+Extracted from 
 Aravind Subramanian, Pablo Tamayo, Vamsi K. Mootha, Sayan Mukherjee, Benjamin L. Ebert, Michael A. Gillette, Amanda Paulovich, Scott L. Pomeroy, Todd R. Golub, Eric S. Lander, and Jill P. Mesirov
 Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expression profiles
 PNAS 2005 102 (43) 15545-15550
 }
 \description{
-Mouse orthologs gene set collections from the MSigDB database Version 5
+Mouse orthologs gene set collections from the MSigDB database
+}
+\details{
+Procedure \cr 
+1. The current msigdb_vx.xml file was downloaded. \cr 
+2. Human Entrez Gene IDs were mapped to Mouse Entrez Gene IDs, using the HGNC 
+Comparison of Orthology Predictions (HCOP). \cr 
+3. The collection was converted to a list in R, and written to a RData file using save().
+}
+\seealso{
+Invoke egsea.data() to find out the current version and latest download/update date.
 }
 

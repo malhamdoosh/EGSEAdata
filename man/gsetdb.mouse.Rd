@@ -8,9 +8,21 @@
 \source{
 Araki Hiromitsu,Knapp Christoph,Tsai Peter and Print Cristin(2012), 
 GeneSetDB: A comprehensive meta-database, statistical and visualisation framework 
-for gene set analysis, FEBS Open Bio, 2, doi: 10.1016/j.fob.2012.04.003
+for gene set analysis, FEBS Open Bio, 2, doi: 10.1016/j.fob.2012.04.003 
+Downloaded from http://www.genesetdb.auckland.ac.nz/
 }
 \description{
 Mouse gene set collections from the GeneSetDB
+}
+\details{
+Procedure \cr 
+1. The Mouse GMT file was downloaded from the website. \cr 
+2. The gene set sources and categories were manually compiled from the Help page. \cr 
+3. An R list was created for the gene set categories.  \cr 
+4. An annotation data frame was created for the gene sets. \cr 
+5. An R data object was written using save().
+}
+\seealso{
+Invoke egsea.data() to find out the current version and latest download/update date.
 }
 
