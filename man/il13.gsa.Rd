@@ -10,6 +10,7 @@ The dataset of this analysis is available in the EGSEAdata package.
 }
 \description{
 EGSEA analysis was performed on the il13.data from the EGSEAdata package using
-the KEGG pathways, c2 and c5 gene set collections.
+the KEGG pathways, c2 and c5 gene set collections. Type show(il13.gsa) to see
+the version of datasets/packages that were used.
 }
 

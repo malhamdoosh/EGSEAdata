@@ -9,7 +9,6 @@
 Aravind Subramanian, Pablo Tamayo, Vamsi K. Mootha, Sayan Mukherjee, Benjamin L. Ebert, Michael A. Gillette, Amanda Paulovich, Scott L. Pomeroy, Todd R. Golub, Eric S. Lander, and Jill P. Mesirov
 Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expression profiles
 PNAS 2005 102 (43) 15545-15550
-Downloaded from http://broadinstitute.org/ on 20 August 2015.
 }
 \description{
 Gene set collections from the MSigDB database

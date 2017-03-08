@@ -89,68 +89,69 @@
 #updateMSigDBAnno <- function(xml.file, out.dir="./"){
 #
 #	library(XML)
-#	msigdb.xml.file="../msigdb_v5.0.xml"
-#	msigdb = xmlToList(xmlParse(msigdb.xml.file))
+##	msigdb.xml.file="../msigdb_v5.0.xml"
+#	msigdb = xmlToList(xmlParse(xml.file))
 #	save(msigdb, file="msigdb.rda")
 #}
 #
-#updateMsigDBMouseC5 <- function(out.dir="./"){	
-#	
-#	data(msigdb.mouse_c5_v4)
-#	go.terms = sapply(names(Mm.c5), function(x) tolower(gsub("_", " ", x)))
-#	xx = GOTERM	
-#	t = sapply(1:length(xx), function(x) tolower(Term(xx[x])))
-#	t = sapply(t, function(x) gsub("-", " ", x))
-#	t.splits = sapply(t, function(x) strsplit(x, " ", fixed=TRUE)[1])
-#	t.splits = sapply(t.splits, function(x) as.vector(sapply(x, function(y) sub(",$", "", y))))
-#	
-#	ontology = character(0)
-#	goID = character(0)
-#	for (i in 1:length(go.terms)){
-#		temp = xx[go.terms[i] == t]
-#		if (length(temp) == 1){
-#			ontology = c(ontology, Ontology(temp))
-#			goID = c(goID, GOID(temp))
-#			next
-#		}
-#		temp = xx[grep(go.terms[i], t)]
-#		if (length(temp) == 0){
-#			tokens = strsplit(go.terms[i], " ", fixed=TRUE)[[1]]
-#			temp = xx[sapply(t.splits, function(x) length(intersect(tokens, x)) / length(tokens) == 1)]
-##			print(go.terms[i])
-##			print(length(temp))			
-#		}
-#		if (length(temp) == 1){
-#			ontology = c(ontology, Ontology(temp))
-#			goID = c(goID, GOID(temp))
-#			next
-#		}
-#		if (length(temp) > 1){				
-#			max.overlapping = 0
-#			best = NULL
-#			genes.original = Mm.c5[[i]]
-#			for (j in 1:length(temp)){
-#				tmp = temp[j]
-#				tryCatch({genes = get(GOID(tmp), org.Mm.egGO2ALLEGS)}, 
-#						error=function(e){genes=c()})
-#				overlapping = length(intersect(genes.original, genes))
-#				if ( overlapping > max.overlapping){
-#					max.overlapping = overlapping
-#					best = tmp
-#				}
-#			}
-#			if (!is.null(best)){				
-#				ontology = c(ontology, Ontology(best))
-#				goID = c(goID, GOID(best))	
-##				print(Term(best))
-#				next	
-#			}
-#		}		
-#		ontology = c(ontology, "N/A")
-#		goID = c(goID, "N/A")
-#	}
-#	c5.go.anno = cbind(Ontology=ontology, GOID=goID)
-#	rownames(c5.go.anno) = names(Mm.c5)
-#	file.path = paste0(out.dir, "msigdb.mouse_c5_v4_anno.rda")
-#	save(c5.go.anno, file=file.path)
-#}
+### Not used anymore 
+##updateMsigDBMouseC5 <- function(out.dir="./"){	
+##	
+##	data(msigdb.mouse_c5_v4)
+##	go.terms = sapply(names(Mm.c5), function(x) tolower(gsub("_", " ", x)))
+##	xx = GOTERM	
+##	t = sapply(1:length(xx), function(x) tolower(Term(xx[x])))
+##	t = sapply(t, function(x) gsub("-", " ", x))
+##	t.splits = sapply(t, function(x) strsplit(x, " ", fixed=TRUE)[1])
+##	t.splits = sapply(t.splits, function(x) as.vector(sapply(x, function(y) sub(",$", "", y))))
+##	
+##	ontology = character(0)
+##	goID = character(0)
+##	for (i in 1:length(go.terms)){
+##		temp = xx[go.terms[i] == t]
+##		if (length(temp) == 1){
+##			ontology = c(ontology, Ontology(temp))
+##			goID = c(goID, GOID(temp))
+##			next
+##		}
+##		temp = xx[grep(go.terms[i], t)]
+##		if (length(temp) == 0){
+##			tokens = strsplit(go.terms[i], " ", fixed=TRUE)[[1]]
+##			temp = xx[sapply(t.splits, function(x) length(intersect(tokens, x)) / length(tokens) == 1)]
+###			print(go.terms[i])
+###			print(length(temp))			
+##		}
+##		if (length(temp) == 1){
+##			ontology = c(ontology, Ontology(temp))
+##			goID = c(goID, GOID(temp))
+##			next
+##		}
+##		if (length(temp) > 1){				
+##			max.overlapping = 0
+##			best = NULL
+##			genes.original = Mm.c5[[i]]
+##			for (j in 1:length(temp)){
+##				tmp = temp[j]
+##				tryCatch({genes = get(GOID(tmp), org.Mm.egGO2ALLEGS)}, 
+##						error=function(e){genes=c()})
+##				overlapping = length(intersect(genes.original, genes))
+##				if ( overlapping > max.overlapping){
+##					max.overlapping = overlapping
+##					best = tmp
+##				}
+##			}
+##			if (!is.null(best)){				
+##				ontology = c(ontology, Ontology(best))
+##				goID = c(goID, GOID(best))	
+###				print(Term(best))
+##				next	
+##			}
+##		}		
+##		ontology = c(ontology, "N/A")
+##		goID = c(goID, "N/A")
+##	}
+##	c5.go.anno = cbind(Ontology=ontology, GOID=goID)
+##	rownames(c5.go.anno) = names(Mm.c5)
+##	file.path = paste0(out.dir, "msigdb.mouse_c5_v4_anno.rda")
+##	save(c5.go.anno, file=file.path)
+##}

@@ -20,4 +20,10 @@ collection but MSigDB's collection aimed for a higher level of abstraction for t
 \author{
 Monther Alhamdoosh, Yifang Hu and Gordon K. Smyth
 }
+\references{
+Monther Alhamdoosh, Milica Ng, Nicholas J. Wilson, Julie M. Sheridan, Huy Huynh, 
+Michael J. Wilson, Matthew E. Ritchie; Combining multiple tools outperforms 
+individual methods in gene set enrichment analyses. Bioinformatics 2017; 
+33 (3): 414-424. doi: 10.1093/bioinformatics/btw623
+}
 

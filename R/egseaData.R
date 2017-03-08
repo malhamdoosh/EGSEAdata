@@ -15,13 +15,18 @@
 #' @details While the gene set collections in MSigDB and GeneSetDB have different names and 
 #' purposes, some of these collections overlap. For example, both databases contain a Gene Ontology
 #' collection but MSigDB's collection aimed for a higher level of abstraction for the GO terms.  
-#' 
+#' @references 
+#' Monther Alhamdoosh, Milica Ng, Nicholas J. Wilson, Julie M. Sheridan, Huy Huynh, 
+#' Michael J. Wilson, Matthew E. Ritchie; Combining multiple tools outperforms 
+#' individual methods in gene set enrichment analyses. Bioinformatics 2017; 
+#' 33 (3): 414-424. doi: 10.1093/bioinformatics/btw623
 NULL
 
 #' EGSEA analysis results on the human IL-13 dataset  
 #' 
 #' EGSEA analysis was performed on the il13.data from the EGSEAdata package using
-#' the KEGG pathways, c2 and c5 gene set collections.    
+#' the KEGG pathways, c2 and c5 gene set collections. Type show(il13.gsa) to see
+#' the version of datasets/packages that were used.  
 #' @name il13.gsa
 #' @docType data
 #' @format An object of class EGSEAResults 
@@ -168,8 +173,7 @@ NULL
 #' @source
 #' Aravind Subramanian, Pablo Tamayo, Vamsi K. Mootha, Sayan Mukherjee, Benjamin L. Ebert, Michael A. Gillette, Amanda Paulovich, Scott L. Pomeroy, Todd R. Golub, Eric S. Lander, and Jill P. Mesirov
 #' Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expression profiles
-#' PNAS 2005 102 (43) 15545-15550
-#' Downloaded from http://broadinstitute.org/ on 20 August 2015. 
+#' PNAS 2005 102 (43) 15545-15550  
 #' 
 NULL
 
@@ -395,7 +399,7 @@ egseaData.info <- function(species = "human", simple=TRUE){
     # strore databases information and collection sizes
     # KEGG database
     keggdb.info = list(name = "KEGG Pathways", version = "NA", 
-            date = "15 January 2016", source = "gage::kegg.gsets()",
+            date = "07 March 2017", source = "gage::kegg.gsets()",
             species= "human, mouse, rat", 
             collections= c("Signaling","Metabolism", "Disease"),
             data = "kegg.pathways")
@@ -410,8 +414,8 @@ egseaData.info <- function(species = "human", simple=TRUE){
     db.info[["kegg"]] = list(info=keggdb.info, size=keggdb.sizes)
     # MSIGDB database     
     if (shortSpecies != "rat"){
-        msigdb.info = list(name = "Molecular Signatures Database (MSigDB)", version = "5.0", 
-                date = "15 January 2016", source = "http://software.broadinstitute.org/gsea",
+        msigdb.info = list(name = "Molecular Signatures Database (MSigDB)", version = "5.2", 
+                date = "07 March 2017", source = "http://software.broadinstitute.org/gsea",
                 species= "human, mouse", 
                 collections= c("h", "c1", "c2", "c3", "c4", "c5", 
                         "c6","c7"),

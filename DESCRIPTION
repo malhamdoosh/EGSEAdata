@@ -1,13 +1,13 @@
 Package: EGSEAdata
 Title: Gene set collections for the EGSEA package
-Version: 1.3.0
-Date: 12-07-2016
+Version: 1.3.1
+Date: 15-03-2017
 Author:  Monther Alhamdoosh, Yifang Hu and Gordon K. Smyth 
 Maintainer: Monther Alhamdoosh <m.hamdoosh@gmail.com>
 Description: This package includes gene set collections that are used for the Ensemble of Gene Set Enrichment Analyses (EGSEA) method for gene set testing. It includes Human and Mouse versions of the MSidDB (Subramanian, et al. (2005) PNAS, 102(43):15545-15550) and GeneSetDB (Araki, et al. (2012) FEBS Open Bio, 2:76-82) collections.
-biocViews: ExperimentData
+biocViews: ExperimentData, Homo_sapiens_Data, Mus_musculus_Data, Rattus_norvegicus_Data
 Depends:
-    R (>= 3.3)
+    R (>= 3.4)
 License: file LICENSE
 LazyLoad: yes
 NeedsCompilation: no
